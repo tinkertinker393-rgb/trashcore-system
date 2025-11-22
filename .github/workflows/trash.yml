@@ -1,3 +1,4 @@
+
 name: WhatsApp-Bot-Run
 
 on:
@@ -24,9 +25,23 @@ jobs:
       run: npm install
 
     - name: Run WhatsApp bot with auto-restart
+      env:
+        # --- Environment Variables for the Bot ---
+        OWNER_NUMBER: '254739320033' # IMPORTANT: Ensure this matches the number you paired with
+        SESSION_ID: ${{ secrets.SESSION_ID }} # This references the GitHub Secret you created
+        BOT_PREFIX: '-'
+        ANTIDELETE: 'true'
+        AUTO_TYPE: 'true'
+        AUTO_RECORD: 'false'
+        AUTO_STATUS: 'true'
+        PACK_NAME: 'Trashcore pack'
+        AUTHOR: 'ELIAKIM'
+        # --- End Bot Environment Variables ---
       run: |
         echo "Starting WhatsApp bot with crash recovery..."
         # Run for ~340 minutes (20400s), leaving 15 mins buffer
+        # 'npm start' is used here, assuming your package.json has a "start" script.
+        # If your bot is run directly via 'node index.js', replace 'npm start' accordingly.
         timeout 20400s bash -c 'while true; do npm start || echo "Bot crashed, restarting in 72 seconds..."; sleep 72; done'
         echo "Bot process ended (timeout or manual stop)."
 
@@ -43,6 +58,6 @@ jobs:
           -H "Authorization: token ${GH_TOKEN}" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/${{ github.repository }}/actions/workflows/DEE.yml/dispatches \
-          -d '{"ref":"main"}')
+          -d '{"ref":"main"}') # Ensure 'main' is your correct branch name
         echo "Dispatch response code: $RESPONSE"
-        cat response.json
+        cat response.json 
