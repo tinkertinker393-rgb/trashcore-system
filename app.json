@@ -18,7 +18,7 @@
         },
         "BOT_PREFIX": {
             "description": "Put your bot prefix of desire here",
-            "value": "-",
+            "value": ".",
             "required": false
         },
         "ANTIDELETE": {
