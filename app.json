@@ -7,12 +7,12 @@
     "env": {
     "OWNER_NAME": {
       "description": "enter your owner name here",
-      "value": "Trashcore",
+      "value": "ELIAKIM",
       "required": true
     },
     "BOT_PREFIX": {
       "description": "Put your bot prefix of desire here",
-      "value": ".",
+      "value": "-",
       "required": false
     },
    "ANTIDELETE": {
@@ -42,7 +42,7 @@
     },
     "AUTHOR": {
       "description": "type your author sticker name here",
-      "value": "Trashcore",
+      "value": "ELIAKIM",
       "required": false
     },
     "SESSION_ID": {
