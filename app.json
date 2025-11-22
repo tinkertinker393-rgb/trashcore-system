@@ -5,7 +5,13 @@
     "logo": "https://telegra.ph/file/7aa528767ed96ddc17bc2.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
     "env": {
-    "OWNER_NAME": {
+    },
+    "OWNER_NUMBER": {
+        "description": "enter your number here",
+        "value": "254739320033"
+        "required": true
+    },
+        "OWNER_NAME": {
       "description": "enter your owner name here",
       "value": "ELIAKIM",
       "required": true
