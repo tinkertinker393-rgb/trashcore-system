@@ -1,3 +1,4 @@
+
 {
     "name": "Trash-Core",
     "description": "A whatsApp bot based on Baileysjs linrary (Ts+Js) with Multi Device support",
@@ -5,67 +6,66 @@
     "logo": "https://telegra.ph/file/7aa528767ed96ddc17bc2.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
     "env": {
-    },
-    "OWNER_NUMBER": {
-        "description": "enter your number here",
-        "value": "254739320033"
-        "required": true
-    },
+        "OWNER_NUMBER": {
+            "description": "enter your number here",
+            "value": "254739320033",
+            "required": true
+        },
         "OWNER_NAME": {
-      "description": "enter your owner name here",
-      "value": "ELIAKIM",
-      "required": true
-    },
-    "BOT_PREFIX": {
-      "description": "Put your bot prefix of desire here",
-      "value": "-",
-      "required": false
-    },
-   "ANTIDELETE": {
-      "description": "type true if you want your bot to detect deleted messages in your dm if else type false",
-      "value": "true",
-      "required": false
-    },
- "AUTO_TYPE": {
-      "description": "type true if you want your bot to show fake typing in your chats  if else type false",
-      "value": "true",
-      "required": false
-    },
-"AUTO_RECORD": {
-      "description": "type true if you want your bot to show fake recording in your chat if else type false",
-      "value": "false",
-      "required": false
-    },
-   "AUTO_STATUS": {
-      "description": "type true if you want bot to view status if else type false",
-      "value": "true",
-      "required": false
-    },
-    "PACK_NAME": {
-      "description": "type your sticker pack name here",
-      "value": "Trashcore pack",
-      "required": false
-    },
-    "AUTHOR": {
-      "description": "type your author sticker name here",
-      "value": "ELIAKIM",
-      "required": false
-    },
-    "SESSION_ID": {
-      "description": "put your session ID here",
-      "value": "trashcore~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0ZTWW0yeTVHWGxEbmxrR0NsWVFxUVo5RUFtMVVmWm1GTGQ2ejNrbTVHYz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieGMxNUdYWWdJcjg5elBETXhYaEZKNHlOcmtTVDA5TTBPamZwTXp1SVF6Yz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDREYxYkpMaUNOcDZxUnI1ek5zaTJBUlVFZGdFUTlFbEszblhIT2taczM0PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwSjdHNnNkbS9jZHplL2ZLeEZ4UXdTbnhXZGJ3RS8yMktDbGZMN0RKbDN3PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImFGR0ZOWndkUXl5T29LNEdMQVkzMTJ6SHRtalk0aTNsV0VTcStCYlNEa1E9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ii9HSEZDQkY2WnA4cnd1YTQ0MnRMM0N3dFRpaVU2eDg2WUhOWGp1Q0p1bm89In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNENhWnFXQlNWcFhJTTJQVDFQeHl3TXArNENpeHVYamtkc0lTSWszc0pITT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRFJmdEhOV2NQNXRlWExFdGgzd3VlbE90SGtYbXV0REJtWUpzaFBGMlVXYz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkFZc2J5eUpPNGcrQ3Zwdkw5Mi9lZEx5bkRIZ2FrSzVSZjZIOVY2MzBlbktLaHQ1VXczWTFDd0lsbWExNVlXSVV4dU53bnh3azg2cC9RdUh4aXRhT2pRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTM0LCJhZHZTZWNyZXRLZXkiOiJILzc3OXZZeGNNeUpzc1VuZkNqVzM3NXJtWTlRUUVHSEZHVWJoZE8reWNJPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6NjEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjo2MSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiIwTlpHV1dSZVR0YU9GUlRkV0wxd0x3IiwicGhvbmVJZCI6ImEzNGM4NTdiLTYxZmMtNGNmZC1iZmU4LTM0ZjM3YTg1Mjk0MyIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ4U250T28wZ2oyekN5OXJSMTVjYW1TSGRCbUk9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRXMrQ2pDZDQ5UjMwL3VDZVhEUjdZdVNwUVRNPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IlRSQVNIQk9UIiwibWUiOnsiaWQiOiIyNTQ3MzkzMjAwMzM6OEBzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiJLaW5ndm9uIiwibGlkIjoiMTEwNjIxODE1MjEwMTk1OjhAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNJemU2czhGRUpYa2hja0dHQU1nQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiI0VjNka0c3RmJ5bTBtYjdXdDhlZk91ZHFRT3I5cnB6bkhPV3BPU1oxQkhRPSIsImFjY291bnRTaWduYXR1cmUiOiJrRzJrZjVaS05vM2lqbk1kZWtBQ0xOOGxid3RxYVp2UjJWWk5MNW11UURkOXg4dDFUWEpvdkFjVG5aL0xpeDc3OVhMZmdhTDdlM25tTWxIZWZwV1pDUT09IiwiZGV2aWNlU2lnbmF0dXJlIjoib1lOTE5ocGVtTEtWYmxXRjVXM3NrUkJpRE5sNDFqUWRrZEU1b1EwY3I0aTd5VlcrMHNhZlBNVE1jSkZkS3EreFZDaHZLUlBEZ0dHM2FyUWplT3E3Z2c9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyNTQ3MzkzMjAwMzM6OEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJlRmQzWkJ1eFc4cHRKbSsxcmZIbnpybmFrRHEvYTZjNXh6bHFUa21kUVIwIn19XSwicGxhdGZvcm0iOiJzbWJhIiwicm91dGluZ0luZm8iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDQVVJQ0FnQyJ9LCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3NjM3OTk1ODcsImxhc3RQcm9wSGFzaCI6IlBXazVCIiwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFMaTMifQ==",
-      "required": true
-    }
+            "description": "enter your owner name here",
+            "value": "ELIAKIM",
+            "required": true
+        },
+        "BOT_PREFIX": {
+            "description": "Put your bot prefix of desire here",
+            "value": "-",
+            "required": false
+        },
+        "ANTIDELETE": {
+            "description": "type true if you want your bot to detect deleted messages in your dm if else type false",
+            "value": "true",
+            "required": false
+        },
+        "AUTO_TYPE": {
+            "description": "type true if you want your bot to show fake typing in your chats  if else type false",
+            "value": "true",
+            "required": false
+        },
+        "AUTO_RECORD": {
+            "description": "type true if you want your bot to show fake recording in your chat if else type false",
+            "value": "false",
+            "required": false
+        },
+        "AUTO_STATUS": {
+            "description": "type true if you want bot to view status if else type false",
+            "value": "true",
+            "required": false
+        },
+        "PACK_NAME": {
+            "description": "type your sticker pack name here",
+            "value": "Trashcore pack",
+            "required": false
+        },
+        "AUTHOR": {
+            "description": "type your author sticker name here",
+            "value": "ELIAKIM",
+            "required": false
+        },
+        "SESSION_ID": {
+            "description": "put your session ID here",
+            "value": "trashcore~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0ZTWW0yeTVHWGxEbmxrR0NsWVFxUVo5RUFtMVVmWm1GTGQ2ejNrbTVHYz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieGMxNUdYWWdJcjg5elBETXhYaEZKNHlOcmtTVDA5TTBPamZwTXp1SVF6Yz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDREYxYkpMaUNOcDZxUnI1ek5zaTJBUlVFZGdFUTlFbEszblhIT2taczM0PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwSjdHNnNkbS9jZHplL2ZLeEZ4UXdTbnhXZGJ3RS8yMktDbGZMN0RKbDN3PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImFGR0ZOWndkUXl5T29LNEdMQVkzMTJ6SHRtalk0aTNsV0VTcStCYlNEa1E9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ii9HSEZDQkY2WnA4cnd1YTQ0MnRMM0N3dFRpaVU2eDg2WUhOWGp1Q0p1bm89In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNENhWnFXQlNWcFhJTTJQVDFQeHl3TXArNENpeHVYamtkc0lTSWszc0pITT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRFJmdEhOV2NQNXRlWExFdGgzd3VlbE90SGtYbXV0REJtWUpzaFBGMlVXYz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkFZc2J5eUpPNGcrQ3Zwdkw5Mi9lZEx5bkRIZ2FrSzVSZjZIOVY2MzBlbktLaHQ1VXczWTFDd0lsbWExNVlXSVV4dU53bnh3azg2cC9RdUh4aXRhT2pRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTM0LCJhZHZTZWNyZXRLZXkiOiJILzc3OXZZeGNNeUpzc1UnRkNqVzM3NXJtWTlRUUVHSEZHVWJoZE8reWNJPSIsInByb2Nlc3NlZkhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6NjEsImZpcnN0VW51cGxvYmVkUHJlS2V5SWQiOjYxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6IjBOTkdXV1JlVHRhT0ZSVGRXTDJ3THciLCJwaG9uZUlEIjoiYTM0Yzg1N2ItNjFmYy00Y2ZkLWJmZTgtMzRmMzdhODUyOTQzIiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InhTbnRPbzBnajJ6Q3k5clIxNWNhbVNIZEJtST0ifX0sInJlZ2lzdGVlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkVzK0NqQ2Q0OVIzMC91Q2VYRFI3WXVTcFJUTT0ifX0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiVFJBU0hCT1QiLCJtZSI6eyJpZCI6IjI1NDczOTMyMDAzMzo4QHMuZGN3aGF0c2FwcC5uZXQiLCJuYW1lIjoiS2luZ3ZvbiIsImxpZCI6IjExMDYxMTgxNTIxMDE5NTo4QGxpZCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSXplNnI4RkVKeGtoaWNLR0FNR0FBR0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiNFYzaXNrRzdmYnltMG1iN1d0OGVmT3VkcVFPcjlscHpOSU9XcFBTajFCSFF9IiwiYWNjb3VudFNpZ25hdHVyZSI6ImtHMmtmNVpLTm8zaWpuTWRla3FDTG44bGJ3dHFhWnZSMlZaTjVMbXVVUmQ5eDgyVDFYWmpvdkFjVG5aL0xpeDc3OVhMZnFnYUxEZTNuak1sSGVmcFdaQ1U9PSIsImRldmljZVNpZ25hdHVyZSI6Im9ZTjFMbXBlbUxLdmJsV0Y1VzNza1JCaURObDQxalFka2RFNW9RMGNyNGk3eVZXKzBzYWZQTFRNY0pGZEntrZXhWQ2h2S1JQRGdHUDEzYXJRamVPcTdnZz09In19LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyNTQ3MzkzMjAwMzM6OEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJlRmQzWkJ1eFc4cHRKbSsxcmZIbnpybmFrRHEvYTZjNXh6bHFUa21kUVIwIn19XSwicGxhdGZvcm0iOiJzbWJhIiwicm91dGluZ0luZm8iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDQVVJQ0FnQyJ9LCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3NjM3OTk1ODcsImxhc3RQcm9wSGFzaCI6IlBXazVCIiwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFMaTMifQ==",
+            "required": true
+        }
     },
     "buildpacks": [
-      {
-        "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-          }
-     ]
-} 
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+        }
+    ]
+}
